@@ -67,45 +67,7 @@
       }
 
       .content a .element:hover button {
-        cursor: pointer
-      }
 
-      .branding {
-        position: fixed;
-        bottom: 30px;
-        right: 30px;
-        display: flex;
-        align-items: center;
-        filter: drop-shadow(0 1px 5px rgba(0, 0, 0, .4));
-        background: #df001d;
-        z-index: 9999999999999999;
-        transition: all 0.3s ease;
-        transform: none
-      }
-
-      .branding img {
-        height: 40px;
-        width: 40px;
-        margin-bottom: 0;
-        padding: 2px
-      }
-
-      .brandingContent {
-        display: none
-      }
-
-      .brandingContent p {
-        margin: 0;
-        font-family: 'Yantramanav';
-        color: #fff;
-        font-size: 15px;
-        padding: 0 8px
-      }
-
-      .branding:hover {
-        transform: scale(1.1);
-        cursor: pointer
-      }
 
       @media(min-width: 5px) {
         .brandingContent {
@@ -113,28 +75,31 @@
         }
       }
 .neon-cursor {
-  width: 20px;
-  height: 20px;
-  border: 2px solid cyan;
-  border-radius: 50%;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  pointer-events: none;
-  mix-blend-mode: difference;
+  cursor: url(default.svg), auto;
 }
 
-.neon-cursor::after {
-  content: "";
+.content {
+  position: relative;
+}
+
+.neon-cursor .dot {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 20px;
   height: 20px;
-  border: 2px solid cyan;
   border-radius: 50%;
-  position: absolute;
-  transform: translate(-50%, -50%) scale(0);
-  pointer-events: none;
-  mix-blend-mode: difference;
-  transition: transform 0.3s ease-out;
+  background-color: neoncyan;
+  animation: neon-trail 1s linear infinite;
 }
-.neon-cursor.active::after {
-  transform: translate(-50%, -50%) scale(1);
+
+@keyframes neon-trail {
+  from {
+    transform: scale(0);
+    opacity: 0.5;
+  }
+  to {
+    transform: scale(1);
+    opacity: 0;
+  }
 }
