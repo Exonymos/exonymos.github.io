@@ -156,7 +156,7 @@
           </svg></div>
         <div class="element" style="--ts:2.4; --x:6.36; --y:4.58667; --w:7; --h:3; --r:0; --s:1; --f:Bebas Neue; --co:#6666ff;" data-type="text">
           <div class="el_content">
-            <p><strong>Exonymos!</strong></p>
+            <p>Exonymos!&nbsp;</p>
           </div>
         </div>
         <div class="element" style="--x:7.36; --y:7.14667; --w:2.45; --h:2.45; --r:0; --s:1; --c:15;" data-image="contain" data-type="image"><img src="https://media3.giphy.com/media/j8UxjCDIYG0m7ZiBJk/giphy.gif?cid=446e6413wacjq3r8wxuq2fqr103ix5ouvz8mrm3q8vl2mjss&rid=giphy.gif&ct=s" draggable="false" loading="lazy"></div>
@@ -166,7 +166,7 @@
         </div>
         <div class="element" style="--ts:1.9; --x:9.04; --y:6.30667; --w:7; --h:3; --r:0; --s:1; --f:Bebas Neue; --co:#6666ff;" data-type="text">
           <div class="el_content">
-            <p>17 ?/? Saggitarius</p>
+            <p>17 ?/? Sagittarius&nbsp;</p>
           </div>
         </div>
         <div class="element" style="--x:-0.573333; --y:6.21333; --w:5.8; --h:7.9; --r:0; --s:1; --boc:#6666ff; --bos:0.15;" data-type="image"><img src="https://files.strawcdn.com/straw/wCnpzQzKQYtxuvLbglxO.jpg" draggable="false" loading="lazy"></div>
@@ -179,14 +179,13 @@
         <div class="element" style="--y:3.65333; --x:-11.2267; --r:0; --s:1;" data-type="paint"><svg>
             <g>
               <polyline points="545,380 545,380 545,380 545,381 545,383 546,387 548,391 550,397 552,402 554,406 555,410 557,414 559,418 561,422 562,427 564,431 567,436 569,440 571,443 573,446 575,451 579,455 583,460 587,465 590,469 594,473 598,476 602,480 607,484 612,488 618,492 623,496 629,499 635,503 641,506 648,508 654,510 659,512 665,514 670,515 675,516 679,516 683,516 689,516 695,517 702,517 709,517 717,517 726,518 734,519 742,519 749,520 757,520 764,521 770,521 776,521 780,521 783,521 785,521 785,521 786,521 786,521" stroke="#6b6bff" stroke-width="8" fill-opacity="0"></polyline>
-              <polyline points="526,432 526,432 526,432 526,431 526,431 526,428 526,423 526,417 527,412 528,406 529,402 530,398 532,393 533,389 535,384 537,380 538,377 538,375 539,375 539,375 539,375 539,375 539,375 539,375 539,375 540,375 540,375 540,375 540,375 540,375 541,375 542,375 544,376 548,377 551,378 555,379 559,381 563,383 567,385 571,387 574,389 578,391 581,392 583,394 586,395 588,396 589,397 589,397 590,398" stroke="#6b6bff" stroke-width="8" fill-opacity="0">
-                <p>this is a picture of me (but not really! you should go ahead and edit this)</p>
-              </polyline>
+              <polyline points="526,432 526,432 526,432 526,431 526,431 526,428 526,423 526,417 527,412 528,406 529,402 530,398 532,393 533,389 535,384 537,380 538,377 538,375 539,375 539,375 539,375 539,375 539,375 539,375 539,375 540,375 540,375 540,375 540,375 540,375 541,375 542,375 544,376 548,377 551,378 555,379 559,381 563,383 567,385 571,387 574,389 578,391 581,392 583,394 586,395 588,396 589,397 589,397 590,398" stroke="#6b6bff" stroke-width="8" fill-opacity="0"></polyline>
             </g>
           </svg></div>
-        <div class="element" style="--ts:1.5; --f:Frank Ruhl Libre; --co:#6666ff; --x:10.08; --y:16.0667; --w:5; --h:3; --r:0; --s:1; --ta:left; font-size: 20px" data-type="text">This is me or maybe not<br>
- :)
-          <div class="el_content"> </div>
+        <div class="element" style="--ts:1.5; --f:Frank Ruhl Libre; --co:#6666ff; --x:10.08; --y:16.0667; --w:5; --h:3; --r:0; --s:1; --ta:center;" data-type="text">
+          <div class="el_content">
+            <p>this is a picture of me (but not really! you should go ahead and edit this)</p>
+          </div>
         </div>
         <div class="element" style="--ts:2.4; --x:0.0266667; --y:18.68; --w:7; --h:3; --r:0; --s:1; --f:Bebas Neue; --co:#6666ff;" data-type="text">
           <div class="el_content">
@@ -216,82 +215,8 @@
           </div>
         </div>
       </div>
-    </div>
-   
-      <div>
-<div class="brandingContent" style="display: none;">
-    <p>Made with StrawPage</p>
-        </div>
-      </div>
-    </a>
-    <script>
-      function formatPaint() {
-        var maxWindow = parseFloat($(".first").css("--mw"));
-        var currentWindow = $(window).width();
-        if (currentWindow < maxWindow) {
-          var paintRatio = currentWindow / maxWindow;
-          $(".first svg,#drawing svg").each(function() {
-            var getOldS = parseFloat(1 - paintRatio);
-            $(this).css("--ns", getOldS);
-          });
-        } else {
-          $(".first svg,#drawing svg").css("--ns", 0);
-        }
-      }
-
-      function makeGrid() {
-        var getSize = parseFloat($(".content").outerWidth()) / 16 / 16;
-        $(".first").css("--g", getSize);
-        gridSize = parseFloat($(".grid").css("--g")) * 16;
-        gridDown = false;
-        gridSelected = false;
-        formatPaint();
-      }
-      makeGrid();
-      $(window).on("resize", function() {
-        makeGrid();
-      });
-
-      function calculateEditorHeight() {
-        var getScroll = $(document).scrollTop();
-        $(".content").css("min-height", "");
-        var getHeight = $(".content")[0].scrollHeight;
-        var getWindowHeight = $(window).outerHeight();
-        $(".content").css("min-height", getHeight + ((getWindowHeight / 100) * 75));
-        $(document).scrollTop(getScroll);
-      }
-      calculateEditorHeight();
-      $(document).on("ready", function() {
-        calculateEditorHeight();
-      });
-      $(document).on("mousemove touchmove", function(e) {
-        var currentY = e.originalEvent.touches ? e.originalEvent.touches[0].pageY : e.pageY;
-        var currentX = e.originalEvent.touches ? e.originalEvent.touches[0].pageX : e.pageX;
-        $(".eyeball span").each(function() {
-          var standardR = parseFloat($(this).closest(".element").css("--r"));
-          var eye = $(this);
-          var eyeX = (eye.offset().left) + (eye.width() / 2);
-          var eyeY = (eye.offset().top) + (eye.height() / 2);
-          rad = Math.atan2(currentX - eyeX, currentY - eyeY);
-          rot = (rad * (180 / Math.PI) * -1) + 180;
-          rot -= standardR;
-          eye.css({
-            '-webkit-transform': 'rotate(' + rot + 'deg)',
-            '-moz-transform': 'rotate(' + rot + 'deg)',
-            '-ms-transform': 'rotate(' + rot + 'deg)',
-            'transform': 'rotate(' + rot + 'deg)'
-          });
-        });
-      });
-      if ($(window).width() < 5) {
-        $(".branding").mouseover(function() {
-          $(".brandingContent").show(150)
-        }).mouseleave(function() {
-          $(".brandingContent").hide(150)
-        });
-      }
-
-    </script>
+	  </div>
+    
   </body>
 
 </html>
