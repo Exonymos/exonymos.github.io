@@ -65,4 +65,17 @@
         });
       }
 
-  
+  const neonCursor = document.querySelector(".neon-cursor");
+
+document.addEventListener("mousemove", e => {
+  neonCursor.style.left = `${e.pageX}px`;
+  neonCursor.style.top = `${e.pageY}px`;
+});
+
+document.addEventListener("mouseenter", () => {
+  neonCursor.classList.add("active");
+});
+
+document.addEventListener("mouseleave", () => {
+  neonCursor.classList.remove("active");
+});
