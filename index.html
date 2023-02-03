@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
-
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Karla:400,900|PT+Sans+Narrow|Yantramanav:400,900|Roboto:900,400|Bangers|Krona+One|Nunito:400,900|Frank+Ruhl+Libre:400,900|Oswald:400,900|Source+Serif+Pro|Work+Sans:400,900|Open+Sans|Raleway|Lato|Passion+One|Lateef|Crimson+Text|Baloo+Paaji+2|Jost|Oswald|Montserrat|Lexend+Deca|Bungee+Shade|Rubik|Inter:400,900|Bebas+Neue|Syncopate:400,700|VT323:400,900|Poppins:400,900|Fredoka+One:400,900|Staatliches:400,900" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -13,7 +15,9 @@
     <meta property="og:image" content="https://strawcdn.com/capture/exonymos.straw.page.jpg?v=5391" />
     <meta property="twitter:image" content="https://strawcdn.com/capture/exonymos.straw.page.jpg?v=387" />
     <script src="https://restored-elegant.straw.page/script.js" data-site="ZXDYIAXN" defer></script>
-    <title>Exonymos</title>
+
+    <title>Exonymos - Home</title>
+
     <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/medium-editor/5.23.3/js/medium-editor.min.js"></script>
   </head>
@@ -34,7 +38,6 @@
               <polyline points="686,120 686,120 686,120 686,121 686,122 686,124 686,130 686,137 686,145 686,155 686,164 686,173 686,182 686,191 686,198 686,203 686,208 686,212 686,215 686,217 687,218 687,218 687,219 687,219 687,219 687,218 687,216" stroke="#6b6bff" stroke-width="8" fill-opacity="0"></polyline>
               <polyline points="686,123 686,123 687,123 688,123 690,123 695,122 700,121 706,120 711,120 715,120 719,119 723,119 725,119 728,119 729,119 731,119 732,119 733,119 734,119 734,119" stroke="#6b6bff" stroke-width="8" fill-opacity="0"></polyline>
               <polyline points="686,169 686,169 687,169 689,168 691,167 695,165 698,164 702,164 705,163 708,163 711,163 714,163 716,163 719,163 721,163 723,162 724,162 724,162 725,162 725,162 725,162 725,162 726,162 726,162 726,162 727,162 727,162 728,162 729,162 730,162 730,162 731,162 731,162" stroke="#6b6bff" stroke-width="8" fill-opacity="0"></polyline>
-              
               <polyline points="776,113 776,113 776,113 776,114 776,116 776,119 776,122 776,127 776,134 776,140 776,147 776,154 776,160 776,166 776,171 775,176 775,179 775,182 775,183 775,184 775,185 775,186 775,187 775,189 774,190 774,191 774,192 774,193 774,193 774,193 774,194 774,195 774,197 774,198 774,200 774,200 774,201 774,201 774,200 774,199" stroke="#6b6bff" stroke-width="8" fill-opacity="0"></polyline>
               <polyline points="769,217 769,217 769,217 769,217 770,216 770,216 771,216 771,216 771,217 771,218 771,219 771,221 771,223 770,225 769,226 768,227 767,227 766,228 765,227 765,226 765,224 766,222 767,221 768,221 769,220 770,220 770,220 770,221 770,222 770,224 769,225 768,226 767,227 767,227 767,226 766,224 766,222 767,219 768,218 770,217 771,217 772,217 772,217 772,218 772,220 772,222 771,224 771,225 770,225 769,225 769,225 769,223 769,221 769,219 770,218 771,217 772,217 772,218 772,219 772,221 772,224 771,225 769,227 768,227 767,227 767,227 767,227 767,225 767,224 767,222 768,220 769,219 770,219 770,219 770,219 770,220 770,221 770,222 770,223 770,224 770,224 769,224 769,223 770,221 771,220 772,220 773,220 773,220 773,221 773,222 773,224 773,226 773,226 772,227 772,227 772,226 772,225 772,224 772,224" stroke="#6b6bff" stroke-width="8" fill-opacity="0"></polyline>
             </g>
@@ -101,6 +104,67 @@
         </div>
       </div>
 	  </div>
+    <script>
+      function formatPaint() {
+        var maxWindow = parseFloat($(".first").css("--mw"));
+        var currentWindow = $(window).width();
+        if (currentWindow < maxWindow) {
+          var paintRatio = currentWindow / maxWindow;
+          $(".first svg,#drawing svg").each(function() {
+            var getOldS = parseFloat(1 - paintRatio);
+            $(this).css("--ns", getOldS);
+          });
+        } else {
+          $(".first svg,#drawing svg").css("--ns", 0);
+        }
+      }
+
+      function makeGrid() {
+        var getSize = parseFloat($(".content").outerWidth()) / 16 / 16;
+        $(".first").css("--g", getSize);
+        gridSize = parseFloat($(".grid").css("--g")) * 16;
+        gridDown = false;
+        gridSelected = false;
+        formatPaint();
+      }
+      makeGrid();
+      $(window).on("resize", function() {
+        makeGrid();
+      });
+
+      function calculateEditorHeight() {
+        var getScroll = $(document).scrollTop();
+        $(".content").css("min-height", "");
+        var getHeight = $(".content")[0].scrollHeight;
+        var getWindowHeight = $(window).outerHeight();
+        $(".content").css("min-height", getHeight + ((getWindowHeight / 100) * 75));
+        $(document).scrollTop(getScroll);
+      }
+      calculateEditorHeight();
+      $(document).on("ready", function() {
+        calculateEditorHeight();
+      });
+      $(document).on("mousemove touchmove", function(e) {
+        var currentY = e.originalEvent.touches ? e.originalEvent.touches[0].pageY : e.pageY;
+        var currentX = e.originalEvent.touches ? e.originalEvent.touches[0].pageX : e.pageX;
+        $(".eyeball span").each(function() {
+          var standardR = parseFloat($(this).closest(".element").css("--r"));
+          var eye = $(this);
+          var eyeX = (eye.offset().left) + (eye.width() / 2);
+          var eyeY = (eye.offset().top) + (eye.height() / 2);
+          rad = Math.atan2(currentX - eyeX, currentY - eyeY);
+          rot = (rad * (180 / Math.PI) * -1) + 180;
+          rot -= standardR;
+          eye.css({
+            '-webkit-transform': 'rotate(' + rot + 'deg)',
+            '-moz-transform': 'rotate(' + rot + 'deg)',
+            '-ms-transform': 'rotate(' + rot + 'deg)',
+            'transform': 'rotate(' + rot + 'deg)'
+          });
+        });
+      });
+
+    </script>
   </body>
 
 </html>
