@@ -1,3 +1,4 @@
+
 * {
   outline: 0;
   margin: 0;
@@ -37,7 +38,7 @@ a:active {
   font-size: min(16px, 16 * (100vw / var(--mw)));
 }
 .element:hover {
-  cursor:default
+  cursor: auto
 }
 .element[data-type=text] * {
   -webkit-user-drag: auto;
@@ -58,10 +59,13 @@ a:active {
   cursor: pointer
 }
 .content a .element:hover button {
-  cursor: pointer
-}
 @media(min-width: 5px) {
   .brandingContent {
     display: block !important
   }
+}
+}
+
+.content {
+  position: relative;
 }
