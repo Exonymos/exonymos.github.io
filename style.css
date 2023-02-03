@@ -1,4 +1,3 @@
-
 * {
   outline: 0;
   margin: 0;
@@ -38,7 +37,7 @@ a:active {
   font-size: min(16px, 16 * (100vw / var(--mw)));
 }
 .element:hover {
-  cursor: auto
+  cursor:default
 }
 .element[data-type=text] * {
   -webkit-user-drag: auto;
@@ -59,37 +58,10 @@ a:active {
   cursor: pointer
 }
 .content a .element:hover button {
+  cursor: pointer
+}
 @media(min-width: 5px) {
   .brandingContent {
     display: block !important
-  }
-}
-}.neon-cursor {
-  cursor: url(default.svg), auto;
-}
-
-.content {
-  position: relative;
-}
-
-.neon-cursor .dot {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: neoncyan;
-  animation: neon-trail 1s linear infinite;
-}
-
-@keyframes neon-trail {
-  from {
-    transform: scale(0);
-    opacity: 0.5;
-  }
-  to {
-    transform: scale(1);
-    opacity: 0;
   }
 }

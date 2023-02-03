@@ -1,4 +1,3 @@
-
 function formatPaint() {
   var maxWindow = parseFloat($(".first").css("--mw"));
   var currentWindow = $(window).width();
@@ -55,3 +54,10 @@ $(document).on("mousemove touchmove", function(e) {
     });
   });
 });
+if ($(window).width() < 5) {
+  $(".branding").mouseover(function() {
+    $(".brandingContent").show(150)
+  }).mouseleave(function() {
+    $(".brandingContent").hide(150)
+  });
+}
