@@ -122,6 +122,8 @@ footer {
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
     height: 80px;
+    position: relative;
+    bottom: 0;
 }
 
 footer p {
