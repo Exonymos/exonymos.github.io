@@ -187,7 +187,7 @@ input:checked + .slider:before {
   background-color: #333;
 }
 .dark-mode .switch input:checked + .slider:before {
-  transform: translateX(-6px);
+  transform: translateX(7px);
 }
 .dark-mode .github__link {
   color: #f0f0f0;
