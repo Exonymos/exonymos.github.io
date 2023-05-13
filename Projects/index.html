@@ -71,7 +71,7 @@
         const fileList = document.getElementById("fileList");
         data.forEach(item => {
           if (item.name === "index.html") {
-            return;
+            return; // skip the index.html file
           }
           const link = document.createElement("a");
           const icon = document.createElement("i");
@@ -82,8 +82,11 @@
             icon.className = "fas fa-file";
             link.href = baseUrl + item.name;
           }
+          const fileName = document.createElement("span");
+          fileName.className = "file-name";
+          fileName.textContent = item.name;
           link.appendChild(icon);
-          link.appendChild(document.createTextNode(item.name));
+          link.appendChild(fileName);
           fileList.appendChild(link);
         });
       });
