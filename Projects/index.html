@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Folder Contents</title>
+  </head>
+  <body>
+    <script>
+      fetch("https://api.github.com/repos/Exonymos/exonymos.github.io/contents/Projects")
+  .then(response => response.json())
+  .then(data => {
+    const fileList = document.getElementById("fileList");
+    data.forEach(item => {
+      const link = document.createElement("a");
+      link.textContent = item.name;
+      link.href = item.html_url;
+      fileList.appendChild(link);
+    });
+  });
+  </script>
+
+    <h1>Folder Contents</h1>
+    <div id="fileList"></div>
+  </body>
+</html>
