@@ -1,15 +1,13 @@
-title: Example.com
+title: Exonymos
 description: "Introduction for you blog"
 logo_img: "/assets/img/favicon.webp"
 profile_img: "/assets/img/profile.webp"
 
 # Social Links
-email: example@gmail.com
-github_username: github
-twitter_username: twitter
-instagram_username: instagram
-linkedin_username: linkedin
-facebook_username: facebook
+email: exonymos@gmail.com
+github_username: exonymos
+twitter_username: exonymos
+mastodon_username: Exonymos
 
 # External API
 giscus_repo:
