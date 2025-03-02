@@ -4,6 +4,9 @@
             {% if page.title %}
                 <span class="post-title">{{ page.title }}</span>
             {% endif %}
+            {% if page.description %}
+                <span class="post-description">{{ page.description }}</span>
+            {% endif %}
             <div class="post-info">
                 {% if page_level > 2 %}
                     <a class="info-box category-box" href="{{ '/' | append: page_tree[0] | prepend: site.baseurl }}">
@@ -43,7 +46,7 @@
 </div>
 <div class="tag-box">
     {%- for page_tag in page.tags -%}
-        <span class="tag theme-{{ forloop.index0 | modulo: 3 }}" contentID="{{ page_tag }}">
+        <span class="tag theme-{{ forloop.index0 | modulo: 15 }}" contentID="{{ page_tag }}">
             {{ page_tag }}
         </span>
     {%- endfor -%}

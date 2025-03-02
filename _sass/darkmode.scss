@@ -54,6 +54,7 @@ svg { fill:#aaa; }
 .transbox { background-color:rgba(64, 64, 64, 0.6); }
 
 .post-title,
+.post-description,
 .info-box * {
   color:#eee;
   fill :#eee;
@@ -119,7 +120,7 @@ main {
 
   .box_contents { background-image:none; }
 
-  .txt_post { color:#aaa; }
+  .description_post { color:#aaa; }
   .title_post { color:darkgoldenrod; }
   .date { color:#ccc; }
   .category { color:mediumseagreen; }

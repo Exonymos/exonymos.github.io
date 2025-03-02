@@ -55,20 +55,33 @@
   margin:auto;
   padding:1rem 0;
   text-align:center;
-  backdrop-filter:blur(4px);
+  backdrop-filter:blur(5px);
   background-color:rgba(255, 255, 255, 0.5);
+  border-radius:10px;
 }
 
 .post-title {
+  display:block;
   font-size:1.25rem;
   word-spacing:4px;
   font-weight:600;
   word-wrap:break-word;
   font-family:Cambria, sans-serif;
+  margin-bottom:0.25rem;
+}
+
+.post-description {
+  display:block;
+  font-size:1rem;
+  word-spacing:2px;
+  font-weight:200;
+  word-wrap:break-word;
+  font-family:Verdana, sans-serif;
+  margin-bottom:0.5rem;
 }
 
 .post-info {
-  margin-top:1.25rem;
+  margin-top:0.75rem;
   font-size:0.875rem;
 
   svg { width:14px; }
@@ -166,6 +179,58 @@
   background:hsl(200, 65%, 50%);
   &::before { border-color:transparent hsl(200, 65%, 50%) transparent transparent; }
 }
+.theme-3 { 
+  background:hsl(100, 65%, 50%);
+  &::before { border-color:transparent hsl(100, 65%, 50%) transparent transparent; }
+}
+.theme-4 { 
+  background:hsl(300, 65%, 50%);
+  &::before { border-color:transparent hsl(300, 65%, 50%) transparent transparent; }
+}
+.theme-5 { 
+  background:hsl(150, 65%, 50%);
+  &::before { border-color:transparent hsl(150, 65%, 50%) transparent transparent; }
+}
+.theme-6 { 
+  background:hsl(250, 65%, 50%);
+  &::before { border-color:transparent hsl(250, 65%, 50%) transparent transparent; }
+}
+.theme-7 { 
+  background:hsl(350, 65%, 50%);
+  &::before { border-color:transparent hsl(350, 65%, 50%) transparent transparent; }
+}
+.theme-8 { 
+  background:hsl(75, 65%, 50%);
+  &::before { border-color:transparent hsl(75, 65%, 50%) transparent transparent; }
+}
+.theme-9 { 
+  background:hsl(25, 65%, 50%);
+  &::before { border-color:transparent hsl(25, 65%, 50%) transparent transparent; }
+}
+.theme-10 { 
+  background:hsl(125, 65%, 50%);
+  &::before { border-color:transparent hsl(125, 65%, 50%) transparent transparent; }
+}
+.theme-11 { 
+  background:hsl(175, 65%, 50%);
+  &::before { border-color:transparent hsl(175, 65%, 50%) transparent transparent; }
+}
+.theme-12 { 
+  background:hsl(225, 65%, 50%);
+  &::before { border-color:transparent hsl(225, 65%, 50%) transparent transparent; }
+}
+.theme-13 { 
+  background:hsl(275, 65%, 50%);
+  &::before { border-color:transparent hsl(275, 65%, 50%) transparent transparent; }
+}
+.theme-14 { 
+  background:hsl(325, 65%, 50%);
+  &::before { border-color:transparent hsl(325, 65%, 50%) transparent transparent; }
+}
+.theme-15 { 
+  background:hsl(0, 0%, 0%);
+  &::before { border-color:transparent hsl(0, 0%, 0%) transparent transparent; }
+}
 
 main {
   padding:1rem;
@@ -198,20 +263,14 @@ main {
   a {
     color:dodgerblue;
     text-decoration:none;
+    position: relative;
 
-    &::before {
-      position:absolute;
-      content:attr(data-content);
+    &:hover {
       color:midnightblue;
       text-decoration:underline;
       text-decoration-style:wavy;
       text-underline-offset:4px;
-      text-decoration-color:midnightblue;
-      clip-path:polygon(0 0, 0 0, 0% 100%, 0 100%);
-      transition:clip-path .25s;
-    }
-    &:hover::before {
-      clip-path:polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      text-decoration-thickness:2px;
     }
   }
 
@@ -459,6 +518,7 @@ main {
     overflow:hidden;
     text-overflow:ellipsis;
     -webkit-line-clamp:2;
+    line-clamp:2;
     -webkit-box-orient:vertical;
     word-wrap:break-word;
   }
@@ -528,8 +588,10 @@ main {
 
 .post-title { font-size:2.25rem; }
 
+.post-description { font-size:1.25rem; }
+
 .post-info { 
-  margin-top:4rem; 
+  margin-top:2.5rem; 
   font-size:1.25rem;
 
   svg { width:20px; }
