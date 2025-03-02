@@ -434,6 +434,19 @@ main {
     font-size:0.875rem;
     font-style:normal;
   }
+
+  .for-the-badge { // style for Shields.io badges (we have two badges max) badges in img tag
+    img {
+    display:inline-block;
+    margin:0 4px;
+    padding:4px 8px;
+    align-items:center;
+    width:30%;
+    }
+    a {
+        text-decoration:none;
+    }
+  }
 }
 
 #related-box {

@@ -52,6 +52,18 @@
     {%- endfor -%}
 </div>
 <main>
+    <div class="for-the-badge" align="center">
+    {%- if page.url %}
+        <a href="{{ page.url }}" target="_blank" rel="noopener noreferrer">
+            <img src="https://img.shields.io/badge/View%20on-DEV.to-0A0A0A?style=for-the-badge&logo=dev.to" alt="View on DEV.to">
+        </a>
+    {%- endif %}
+    {%- if page.repository %}
+        <a href="https://github.com/{{ page.repository }}" target="_blank" rel="noopener noreferrer">
+            <img src="https://img.shields.io/badge/View%20on-GitHub-181717?style=for-the-badge&logo=github" alt="View on GitHub">
+        </a>
+    {%- endif %}
+    </div>
     {{ content }}
     <!-- see https://giscus.app/ -->
     <div class="giscus" id="giscus" style="margin: 4rem auto;"></div>
