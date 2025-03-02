@@ -46,6 +46,7 @@
 
 #article_content {
   border-bottom:2px solid lightgrey;
+  border-radius:8px;
 
   .thumbnail_post {
     display:block;
@@ -53,7 +54,7 @@
     background-position:50% 50%;
     width:100%;
     aspect-ratio:5/3;
-    border-radius:0;
+    border-radius:8px 0 0 8px;
 
     &:hover { opacity:0.8; }
   }
@@ -86,7 +87,7 @@
   }
   .category{ color:mediumseagreen !important; }
 
-  .txt_post {
+  .description_post {
     display:-webkit-box;
     margin-bottom:12px;
     font-size:0.875rem;
@@ -201,10 +202,10 @@
     padding-top:12px;
   }
   .info-post,
-  .txt_post {
+  .description_post {
     font-size:1.125rem;
   }
-  .txt_post {
+  .description_post {
     margin-top:1rem;
     margin-bottom:1.5rem;
   }
@@ -228,12 +229,12 @@
 
   .box_contents {
     margin-left:-6rem;
-    border-radius:8px;
+    border-radius:8px 0 0 8px;
   }
 
   .date { font-size:1.125rem; }
   .category { font-size:1.25rem; }
-  .txt_post { margin-top:1.25rem; }
+  .description_post { margin-top:1.25rem; }
 }
 
 }

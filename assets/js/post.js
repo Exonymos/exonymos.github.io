@@ -180,9 +180,11 @@ window.addEventListener('load', function(){
             "data-category-id": giscus_categoryId,
             "data-mapping": "pathname",
             "data-reactions-enabled": "1",
-            "data-emit-metadata": "1",
+            "data-emit-metadata": "0",
+            "data-input-position":"top",
             "data-theme": giscusTheme,
             "data-lang": "en",
+            "data-loading": "lazy",
             "crossorigin": "anonymous",
             "async": "",
         };
