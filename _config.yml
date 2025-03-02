@@ -10,11 +10,11 @@ twitter_username: exonymos
 mastodon_username: Exonymos
 
 # External API
-giscus_repo: "byanko55/jekyll-theme-satellite"
+giscus_repo: "exonymos/Projects"
 giscus_repoId: "R_kgDOJ6fqWg"
 giscus_category: "Q&A"
 giscus_categoryId: "DIC_kwDOJ6fqWs4Cc7p7"
-goatcounter_code: byanko77
+goatcounter_code: exonymos
 google_analytics:
 
 # If your repo name follows the format "<user-name>.github.io", then leave the below blank.

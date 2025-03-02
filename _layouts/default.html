@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        {% include head.html %}
-        <link rel="stylesheet" href="{{ '/assets/css/404.css' | prepend: site.baseurl }}">
-    </head>
-    <body>
-        <div class="blank-page">
-        <a href="{{ '/' | prepend: site.baseurl }}" class="go-home">↩️ GO HOME</a>
-        <div class="not-found-msg">
-            <h1 class="sour-face">`Φ ⌒ `Φ ?</h1>
-            <p style="font-size:1.75rem; color:#fa4251;">404: Page not found</p>
-            <p style="font-size:1.25rem;">D-Data breach...? &nbsp&nbsp No such thing allowed!</p>
-        </div>
-        </div>
-    </body>
-    <script src="{{ '/assets/js/404.js' | prepend: site.baseurl }}"></script>
+
+<head>
+    {% include head.html %}
+    <link rel="stylesheet" href="{{ '/assets/css/404.css' | prepend: site.baseurl }}">
+</head>
+
+<body>
+    <div class="blank-page">
+        <p>HTTP: <span>404</span></p>
+        
+        <code><span>this_page</span>.<em>not_found</em> = true;</code>
+        <code><span>if</span> (<b>you_spelt_it_wrong</b>) {<span>try_again()</span>;}</code>
+        <code><span>else if (<b>we_screwed_up</b>)</span> {<em>alert</em>(<i>"We're really sorry about that."</i>); <span>window</span>.<em>location</em> = home;}</code>
+        <center><a  href="{{ '/' | prepend: site.baseurl }}">GO HOME</a></center>
+    </div>
+</body>
+<script src="{{ '/assets/js/404.js' | prepend: site.baseurl }}"></script>
+
 </html>
