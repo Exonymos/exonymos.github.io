@@ -2,6 +2,7 @@ title: Exonymos
 description: "Simple and clean project showcase site for exonymos."
 logo_img: "/assets/img/favicon.webp"
 profile_img: "/assets/img/profile.webp"
+permalink: /:categories/:title/
 
 # Social Links
 email: exonymos@gmail.com
