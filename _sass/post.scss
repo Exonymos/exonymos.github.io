@@ -274,7 +274,7 @@ main {
     }
   }
 
-  p, ul, table, div { margin-bottom:3rem; }
+  p, ul, table, div { margin-bottom:2rem; }
 
   p + div,
   p + pre,
@@ -435,13 +435,11 @@ main {
     font-style:normal;
   }
 
-  .for-the-badge { // style for Shields.io badges (we have two badges max) badges in img tag
+  .for-the-badge {
     img {
     display:inline-block;
     margin:0 4px;
-    padding:4px 8px;
-    align-items:center;
-    width:30%;
+    width:40%;
     }
     a {
         text-decoration:none;
@@ -686,6 +684,13 @@ main {
 }
 
 @include mq(desktop){
+main {
+  .for-the-badge {
+    img {
+      width:30%;
+    }
+  }
+}
 
 #post {
   margin:4rem 0;

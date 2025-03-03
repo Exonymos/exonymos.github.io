@@ -43,8 +43,8 @@ The website images are first created using [Screenshot Machine](https://www.scre
       - **Show Window Controls**: Checked
       - **Show Nav Buttons**: Unchecked
       - **Show Settings Button**: Unchecked
-      - **Show URL Bar**: Checked
-      - **Show URL Text**: Checked
+      - **Show URL Bar**: Unchecked
+      - **Show URL Text**: Unchecked
       - **Browser URL**: [URL of the website]
     - **Background Settings**: None
     - **Canvas Settings**: 
