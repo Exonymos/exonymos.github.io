@@ -46,7 +46,6 @@
 
 #article_content {
   border-bottom:2px solid lightgrey;
-  border-radius:8px;
 
   .thumbnail_post {
     display:block;
@@ -54,7 +53,7 @@
     background-position:50% 50%;
     width:100%;
     aspect-ratio:5/3;
-    border-radius:8px 0 0 8px;
+    border-radius:0;
 
     &:hover { opacity:0.8; }
   }
@@ -173,6 +172,7 @@
   display:flex;
   transition:.3s;
   box-shadow:0 1px 1px 0 rgba(31, 35, 46, .15);
+  border-radius:8px;
 
   &:hover {
     transform:translate(0px, -4px);
@@ -184,6 +184,7 @@
     height:12.5rem;
     aspect-ratio:4/3;
     margin:auto;
+    border-radius:8px 0 0 8px;
   }
 
   .box_contents {
@@ -225,7 +226,10 @@
 .paginated-item { height:15rem; }
 
 #article_content {
-  .thumbnail_post { height:15rem; }
+  .thumbnail_post {
+    height:15rem;
+    border-radius: 8px 0 0 8px;
+  }
 
   .box_contents {
     margin-left:-6rem;

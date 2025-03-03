@@ -53,17 +53,24 @@
 </div>
 <main>
     <div class="for-the-badge" align="center">
-    {%- if page.url %}
-        <a href="{{ page.url }}" target="_blank" rel="noopener noreferrer">
-            <img src="https://img.shields.io/badge/View%20on-DEV.to-0A0A0A?style=for-the-badge&logo=dev.to" alt="View on DEV.to">
+    {%- if page.website %}
+        <a href="{{ page.website }}" target="_blank" rel="noopener noreferrer">
+            <img src="https://img.shields.io/badge/open%20in-website-orange?labelColor=black&style=for-the-badge&logo=vercel&logoColor=white" alt="Open in Website" />
         </a>
     {%- endif %}
     {%- if page.repository %}
         <a href="https://github.com/{{ page.repository }}" target="_blank" rel="noopener noreferrer">
-            <img src="https://img.shields.io/badge/View%20on-GitHub-181717?style=for-the-badge&logo=github" alt="View on GitHub">
+            <img src="https://img.shields.io/badge/open%20in-github-blue?labelColor=black&style=for-the-badge&logo=github&logoColor=white" alt="Open in GitHub" />
         </a>
     {%- endif %}
     </div>
+    {%- if page.projectpreview %}
+        <div>
+            <h2>Project Preview</h2>
+            <img src="{{ page.projectpreview }}" alt="Project Preview">
+            <p style="text-align: center; font-size: 0.8rem; margin-top: 0.5rem;">Project Preview</p>
+        </div>
+    {%- endif %}
     {{ content }}
     <!-- see https://giscus.app/ -->
     <div class="giscus" id="giscus" style="margin: 4rem auto;"></div>
