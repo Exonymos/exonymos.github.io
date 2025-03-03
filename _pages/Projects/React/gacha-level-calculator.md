@@ -2,6 +2,7 @@
 title: "Gacha Level Calculator"
 description: "A simple tool to calculate the exp needed to reach a certain level in a gacha game and the days it may take to reach that level."
 thumbnail: "/assets/img/thumbnail/gacha-level-calculator.png"
+projectpreview: "/assets/img/thumbnail/alt/gacha-level-calculator_alt.png"
 repository: "Exonymos/Projects/tree/5567b39e96f6bdd42c233857029d461456219bf2/Gacha-Level-Calculator"
 website: "https://nograsscalc.vercel.app"
 permalink: /Projects/React/gacha-level-calculator

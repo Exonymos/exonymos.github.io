@@ -4,12 +4,12 @@ description: "A fun and silly personal website I created to experiment with."
 thumbnail: "/assets/img/thumbnail/old-personal-site.png"
 projectpreview: "/assets/img/thumbnail/alt/old-personal-site_alt.png"
 repository: "Exonymos/Personal-site-old"
-website: "https://old.exonymos.me/Personal-site-old"
+website: "https://old.exonymos.me"
 permalink: /Projects/Portfolio/old-personal-site
 tags:
     - portfolio
     - website
-date: "2024-08-25"
+date: "2023-02-02"
 published: true
 ---
 

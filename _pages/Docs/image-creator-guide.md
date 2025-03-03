@@ -1,16 +1,14 @@
 ---
 title: "Image Creator Guide"
 description: "This guide will help you create images for your projects and blog posts using Screenshot Machine and Screenshot Rocks."
-repository: "Exonymos/exonymos.me"
-website: "https://exonymos.me"
-permalink: /image-creator-guide
+permalink: /Docs/image-creator-guide
 tags:
     - user manual
     - utility
     - guide
-date: "2024-02-02"
-published: true
+date: "2025-03-02"
 bookmark: true
+published: true
 ---
 
 This guide will help you create images for your projects and blog posts. The images are used as thumbnails and previews for your projects and blog posts.

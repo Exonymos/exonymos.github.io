@@ -2,19 +2,24 @@
 title: "blog.exonymos.me"
 description: "Personal blog website powered by Jekyll and hosted on GitHub Pages."
 thumbnail: "/assets/img/thumbnail/blog-exonymos-me.png"
+projectpreview: "/assets/img/thumbnail/alt/blog-exonymos-me_alt.png"
 repository: "Exonymos/exonymos.github.io"
 website: "https://blog.exonymos.me"
-permalink: /Projects/Portfolio/exonymos-github-io
+permalink: /Projects/Portfolio/blog-exonymos-me
 tags:
     - portfolio
     - website
-date: "2024-08-25"
+    - jekyll
+    - github pages
+    - 
+date: "2025-03-03"
 published: true
 ---
 
 ## Project Description
 
-This is my personal blog website, where I share my thoughts, and projects. The blog is powered by Jekyll and hosted on GitHub Pages. This website is a modified version of the [byanko55](https://github.com/byanko55)'s [jekyll-theme-satellite](https://github.com/byanko55/jekyll-theme-satellite) with some additional features and modifications.
+This is my personal blog website, where I share my thoughts, and projects.
+The site is powered by Jekyll and hosted on GitHub Pages. This website is a modified version of the byanko55's jekyll site with some additional features, modifications, and improvements.
 
 ## Features
 
