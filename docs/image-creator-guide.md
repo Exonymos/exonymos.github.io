@@ -1,7 +1,7 @@
 ---
 title: "Image Creator Guide"
 description: "This guide will help you create images for your projects and blog posts using Screenshot Machine and Screenshot Rocks."
-permalink: /Docs/image-creator-guide
+permalink: /Guides/image-creator-guide/
 tags:
     - user manual
     - utility
@@ -37,7 +37,7 @@ The website images are first created using [Screenshot Machine](https://www.scre
 2. Enter the URL of the website you want to take a screenshot of or upload an image.
 3. Select the settings as defined below:
     - **Frame Type**: White Transculent
-    - **Frame Settings**: 
+    - **Frame Settings**:
       - **Show Window Controls**: Checked
       - **Show Nav Buttons**: Unchecked
       - **Show Settings Button**: Unchecked
@@ -45,7 +45,7 @@ The website images are first created using [Screenshot Machine](https://www.scre
       - **Show URL Text**: Unchecked
       - **Browser URL**: [URL of the website]
     - **Background Settings**: None
-    - **Canvas Settings**: 
+    - **Canvas Settings**:
       - **Width**: 1100
       - **Height**: 800
       - **Size**: 90

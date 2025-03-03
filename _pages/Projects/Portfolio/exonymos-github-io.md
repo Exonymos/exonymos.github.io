@@ -11,9 +11,8 @@ tags:
     - website
     - jekyll
     - github pages
-    - 
 date: "2025-03-03"
-published: true
+bookmark: true
 ---
 
 ## Project Description
