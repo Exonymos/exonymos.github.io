@@ -5,7 +5,6 @@ thumbnail: "/assets/img/thumbnail/to-do-list.png"
 projectpreview: "/assets/img/thumbnail/alt/todo-list_alt.png"
 repository: "Exonymos/Projects/tree/5567b39e96f6bdd42c233857029d461456219bf2/Todo-List"
 website: "https://old.exonymos.me/Projects/Todo-List"
-permalink: /Projects/React/todo-list
 tags:
     - react
     - productivity

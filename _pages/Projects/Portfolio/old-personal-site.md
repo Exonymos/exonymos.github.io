@@ -5,7 +5,6 @@ thumbnail: "/assets/img/thumbnail/old-personal-site.png"
 projectpreview: "/assets/img/thumbnail/alt/old-personal-site_alt.png"
 repository: "Exonymos/Personal-site-old"
 website: "https://old.exonymos.me"
-permalink: /Projects/Portfolio/old-personal-site
 tags:
     - portfolio
     - website

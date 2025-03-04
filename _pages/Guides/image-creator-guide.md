@@ -1,7 +1,6 @@
 ---
 title: "Image Creator Guide"
 description: "This guide will help you create images for your projects and blog posts using Screenshot Machine and Screenshot Rocks."
-permalink: /Guides/image-creator-guide/
 tags:
     - user manual
     - utility

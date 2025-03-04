@@ -5,7 +5,6 @@ thumbnail: "/assets/img/thumbnail/blog-exonymos-me.png"
 projectpreview: "/assets/img/thumbnail/alt/blog-exonymos-me_alt.png"
 repository: "Exonymos/exonymos.github.io"
 website: "https://blog.exonymos.me"
-permalink: /Projects/Portfolio/blog-exonymos-me
 tags:
     - portfolio
     - website
