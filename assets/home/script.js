@@ -52,7 +52,7 @@ function displayFolders(data, metadata) {
       li.classList.add("fade-in");
       li.dataset.search = folder.searchText;
       li.innerHTML = `
-      <a href="/${repoName}/${folder.name}" tabindex="0" class="block p-4 bg-white dark:bg-gray-800 rounded shadow hover:bg-blue-100 dark:hover:bg-blue-900 transition text-center transform hover:-translate-y-1 focus:outline-none focus:ring focus:ring-blue-300"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline-block mr-2 text-blue-500 dark:text-blue-300" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z" /></svg>
+      <a href="/${metadata.repoName}/${folder.name}" tabindex="0" class="block p-4 bg-white dark:bg-gray-800 rounded shadow hover:bg-blue-100 dark:hover:bg-blue-900 transition text-center transform hover:-translate-y-1 focus:outline-none focus:ring focus:ring-blue-300"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline-block mr-2 text-blue-500 dark:text-blue-300" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z" /></svg>
       ${folder.friendlyName}
       </a>`;
 
