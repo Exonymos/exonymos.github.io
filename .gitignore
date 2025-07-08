@@ -1,2 +1,9 @@
-docs/.hugo_build.lock
-docs/public/
+.DS_Store
+Thumbs.db
+
+.vscode
+
+.hugo_build.lock
+public/
+resources/_gen/
+.notcommit/
