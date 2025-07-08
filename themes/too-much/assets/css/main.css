@@ -318,3 +318,12 @@ hr {
 .giscus {
   padding-top: 1.5rem;
 }
+
+.quick-links a {
+  margin: 0 0.5rem;
+  text-decoration: none !important;
+}
+
+.quick-links img:hover {
+  border: var(--primary) 1px solid !important;
+}
