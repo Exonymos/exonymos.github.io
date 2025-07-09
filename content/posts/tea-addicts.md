@@ -45,6 +45,7 @@ To set up the project locally, follow these steps:
    git clone https://github.com/Exonymos/projects.git
    cd projects/tea-addicts
    ```
+
    or download the folder as a ZIP file from [GitHub](https://github.com/Exonymos/projects/tree/main/tea-addicts)
 
 2. **Install dependencies:**
@@ -78,7 +79,3 @@ We welcome contributions! To contribute:
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE] file for details.
-
-## Contact
-
-If you have any questions or suggestions, feel free to contact me at [GitHub](https://github.com/Exonymos).
